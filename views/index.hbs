@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Wheather app</title>
+    <title>Weather app</title>
 </head>
 <body>
     <div class="box">
@@ -18,13 +18,13 @@
         <div id="wheathercon"><i class="fas fa-sun " style = "color : yellow"></i>
     </div>
     <div class="info">
-        <h2 class="location"><i class="fas fa-street-view"></i>{%location%},{%country%}</h2>
+        <h2 class="location"><i class="fas fa-street-view"></i></br>{{city}}, {{country}}</h2>
+        <h1 class="temp">{{temp}}&deg;C</h1>
+        <h3 class="tempmin_max">Min {{temp_min}}&deg;C | Max {{temp_max}}&deg;C</h3>
         <p id="date"></p>
-        <h1 class="temp">{%tempval%}</h1>
-        <h3 class="tempmin_max">Min {%tempmin%} | Max {%tempmax%}</h3>
     </div>
 </div>
     
-    <script src="js/index.js"></script>
+    <script src="/public/js/index.js"></script>
 </body>
 </html>
